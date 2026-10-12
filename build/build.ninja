@@ -53,6 +53,24 @@ build CMakeFiles/flight_log_analyzer.dir/src/main.cpp.obj: CXX_COMPILER__flight_
   TARGET_PDB = flight_log_analyzer.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\flight_log_analyzer.dir
 
+build CMakeFiles/flight_log_analyzer.dir/src/ulog_parser.cpp.obj: CXX_COMPILER__flight_log_analyzer_unscanned_ C$:/Users/ncolb/flight-log-analyzer/src/ulog_parser.cpp || cmake_object_order_depends_target_flight_log_analyzer
+  DEP_FILE = CMakeFiles\flight_log_analyzer.dir\src\ulog_parser.cpp.obj.d
+  FLAGS = -std=gnu++17 -Wall -Wextra -Wpedantic
+  OBJECT_DIR = CMakeFiles\flight_log_analyzer.dir
+  OBJECT_FILE_DIR = CMakeFiles\flight_log_analyzer.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\flight_log_analyzer.dir\
+  TARGET_PDB = flight_log_analyzer.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\flight_log_analyzer.dir
+
+build CMakeFiles/flight_log_analyzer.dir/src/checks.cpp.obj: CXX_COMPILER__flight_log_analyzer_unscanned_ C$:/Users/ncolb/flight-log-analyzer/src/checks.cpp || cmake_object_order_depends_target_flight_log_analyzer
+  DEP_FILE = CMakeFiles\flight_log_analyzer.dir\src\checks.cpp.obj.d
+  FLAGS = -std=gnu++17 -Wall -Wextra -Wpedantic
+  OBJECT_DIR = CMakeFiles\flight_log_analyzer.dir
+  OBJECT_FILE_DIR = CMakeFiles\flight_log_analyzer.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\flight_log_analyzer.dir\
+  TARGET_PDB = flight_log_analyzer.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\flight_log_analyzer.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target flight_log_analyzer
@@ -61,7 +79,7 @@ build CMakeFiles/flight_log_analyzer.dir/src/main.cpp.obj: CXX_COMPILER__flight_
 #############################################
 # Link the executable flight_log_analyzer.exe
 
-build flight_log_analyzer.exe: CXX_EXECUTABLE_LINKER__flight_log_analyzer_ CMakeFiles/flight_log_analyzer.dir/src/main.cpp.obj
+build flight_log_analyzer.exe: CXX_EXECUTABLE_LINKER__flight_log_analyzer_ CMakeFiles/flight_log_analyzer.dir/src/main.cpp.obj CMakeFiles/flight_log_analyzer.dir/src/ulog_parser.cpp.obj CMakeFiles/flight_log_analyzer.dir/src/checks.cpp.obj
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\flight_log_analyzer.dir
   POST_BUILD = cd .

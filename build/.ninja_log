@@ -1,3 +1,5 @@
 # ninja log v7
-51	663	8134801099528181	CMakeFiles/flight_log_analyzer.dir/src/main.cpp.obj	9746e7c7515c6bc1
-668	1002	8134801105701722	flight_log_analyzer.exe	eceea4c6c65c79b0
+69	1128	8134839744660788	CMakeFiles/flight_log_analyzer.dir/src/checks.cpp.obj	b9057db281e1aeb2
+29	1794	8134839744201436	CMakeFiles/flight_log_analyzer.dir/src/main.cpp.obj	9746e7c7515c6bc1
+51	2479	8134839744431418	CMakeFiles/flight_log_analyzer.dir/src/ulog_parser.cpp.obj	db29d8a4acb7d8a9
+2480	2810	8134839768702944	flight_log_analyzer.exe	5e3253aeec11c730
