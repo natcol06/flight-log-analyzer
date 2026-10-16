@@ -1,8 +1,10 @@
 #include "checks.hpp"
+#include "report.hpp"
 #include "ulog_parser.hpp"
 
 #include <algorithm>
 #include <cmath>
+#include <filesystem>
 #include <iomanip>
 #include <iostream>
 #include <limits>
@@ -31,17 +33,25 @@ void print_topics(const ULogParser& parser) {
     }
 }
 
-void print_event(const Event& e) {
-    std::cout << "  [" << std::right << std::setw(7) << e.start_s << " s to "
-              << std::setw(7) << e.end_s << " s]  "
-              << e.name << ": worst " << e.worst << " " << e.unit
-              << " (limit " << e.limit << ")\n";
-}
-
 int main(int argc, char* argv[]) {
     if (argc < 2) {
-        std::cerr << "Usage: " << argv[0] << " <log.ulg> [--topics]\n";
+        std::cerr << "Usage: " << argv[0] << " <log.ulg> [--topics] [--csv]\n";
         return 1;
+    }
+
+    // Read the options after the file name
+    bool show_topics = false;
+    bool export_csv = false;
+    for (int i = 2; i < argc; ++i) {
+        std::string option = argv[i];
+        if (option == "--topics") {
+            show_topics = true;
+        } else if (option == "--csv") {
+            export_csv = true;
+        } else {
+            std::cerr << "Unknown option: " << option << "\n";
+            return 1;
+        }
     }
 
     ULogParser parser;
@@ -52,7 +62,7 @@ int main(int argc, char* argv[]) {
         std::cerr << "Error: " << parser.error() << "\n";
         return 1;
     }
-    if (argc > 2 && std::string(argv[2]) == "--topics") {
+    if (show_topics) {
         print_topics(parser);
         return 0;
     }
@@ -69,7 +79,7 @@ int main(int argc, char* argv[]) {
 
     std::cout << std::fixed << std::setprecision(2);
 
-    // ----- Flight summary -----
+    // Flight summary 
     std::cout << "=== Flight summary ===\n";
     if (pos != nullptr && !pos->timestamps.empty()) {
         double length = (pos->timestamps.back() - pos->timestamps.front()) / 1e6;
@@ -85,7 +95,7 @@ int main(int argc, char* argv[]) {
         std::cout << "Highest point:   " << -lowest_z << " m above takeoff\n";
     }
 
-    // ----- Vibration zones -----
+    // Vibration zones 
     if (const auto* vib = field(imu, "accel_vibration_metric")) {
         long green = 0, orange = 0, red = 0;
         for (std::size_t i = 0; i < vib->size(); ++i) {
@@ -104,7 +114,7 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    // ----- Run the checks -----
+    // Run the checks
     std::vector<Event> events;
     auto add = [&events](const std::vector<Event>& found) {
         events.insert(events.end(), found.begin(), found.end());
@@ -131,11 +141,10 @@ int main(int argc, char* argv[]) {
                         Direction::Above, th.max_descent_m_s, in_air, t0, th.merge_gap_s));
     }
     if (const auto* remaining = field(battery, "remaining")) {
-        add(find_events("Low battery", "(0 to 1)", battery->timestamps, *remaining,
+        add(find_events("Low battery", "", battery->timestamps, *remaining,
                         Direction::Below, th.min_remaining, in_air, t0, th.merge_gap_s));
     }
 
-    // Voltage per cell = pack voltage / number of cells
     const auto* volts = field(battery, "voltage_v");
     const auto* cells = field(battery, "cell_count");
     if (volts != nullptr && cells != nullptr) {
@@ -149,16 +158,34 @@ int main(int argc, char* argv[]) {
                         Direction::Below, th.min_cell_voltage, in_air, t0, th.merge_gap_s));
     }
 
-    // ----- Report -----
+    // Drop one-reading blips, then sort by time
+    events.erase(std::remove_if(events.begin(), events.end(),
+                                [&th](const Event& e) { return e.samples < th.min_samples; }),
+                 events.end());
     std::sort(events.begin(), events.end(),
               [](const Event& a, const Event& b) { return a.start_s < b.start_s; });
 
-    std::cout << "\n=== Problems found: " << events.size() << " ===\n";
+    // Report
+    std::cout << "\n=== Problems found ===\n";
     if (events.empty()) {
-        std::cout << "  None. Every check passed while the drone was flying.\n";
+        std::cout << "None. Every check passed while the drone was flying.\n";
+    } else {
+        print_check_summary(events);
+        std::cout << "\n=== Event details ===\n";
+        print_event_list(events);
     }
-    for (const Event& e : events) {
-        print_event(e);
+
+    // CSV export
+    if (export_csv) {
+        std::filesystem::create_directories("output");
+        for (const Wanted& w : kWanted) {
+            const TopicData* d = parser.data(w.topic, 0);
+            if (d != nullptr && !d->timestamps.empty()) {
+                write_topic_csv("output/" + w.topic + ".csv", *d, t0);
+            }
+        }
+        write_events_csv("output/events.csv", events);
+        std::cout << "\nCSV files written to the output folder.\n";
     }
 
     if (!parser.warnings().empty()) {

@@ -72,7 +72,7 @@ std::vector<Event> find_events(const std::string& name, const std::string& unit,
         } else {
             // Too far from the last one (or the first one), so start a new event
             if (open) events.push_back(current);
-            current = Event{name, unit, t, t, v, limit, 1};
+            current = Event{name, unit, t, t, v, limit, 1, dir};
             open = true;
         }
     }

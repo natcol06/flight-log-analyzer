@@ -17,6 +17,7 @@ struct Thresholds {
     double min_cell_voltage = 3.5;    // volts per battery cell
     double min_remaining = 0.20;      // 20% battery left
     double merge_gap_s = 2.0;         // join problems less than 2 s apart
+    int min_samples = 2;              // ignore events with fewer bad readings than this
 };
 
 // Is a value bad when it goes above the limit, or below it?
@@ -31,6 +32,7 @@ struct Event {
     double worst = 0;
     double limit = 0;
     int samples = 0;
+    Direction dir = Direction::Above;
 };
 
 // Answers "was the drone in the air at time t?" using vehicle_land_detected

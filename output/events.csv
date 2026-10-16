@@ -1,0 +1,22 @@
+check,start_s,end_s,duration_s,worst,limit,unit,samples
+Very high vibration,3.117,126.113,122.996,22.385,9.810,m/s^2,124
+Very high vibration,129.089,239.132,110.043,21.913,9.810,m/s^2,111
+Very high vibration,250.156,317.105,66.949,16.921,9.810,m/s^2,68
+Few satellites,307.880,312.684,4.804,5.000,6.000,,21
+Poor GPS accuracy,310.879,325.682,14.803,4.998,3.000,m,75
+Few satellites,314.880,318.684,3.804,5.000,6.000,,10
+Very high vibration,319.151,323.122,3.971,11.887,9.810,m/s^2,5
+Very high vibration,347.106,351.097,3.991,18.611,9.810,m/s^2,5
+Very high vibration,355.079,357.130,2.051,15.151,9.810,m/s^2,3
+Very high vibration,363.127,364.147,1.020,11.622,9.810,m/s^2,2
+Very high vibration,374.121,391.058,16.937,22.385,9.810,m/s^2,18
+Very high vibration,393.098,395.134,2.036,16.768,9.810,m/s^2,3
+Very high vibration,413.096,415.132,2.036,13.432,9.810,m/s^2,3
+Very high vibration,432.098,435.069,2.971,18.478,9.810,m/s^2,4
+Very high vibration,438.146,594.119,155.973,21.744,9.810,m/s^2,157
+Very high vibration,602.062,628.133,26.071,24.021,9.810,m/s^2,27
+Very high vibration,635.156,647.086,11.930,13.794,9.810,m/s^2,13
+Very high vibration,652.098,658.116,6.018,11.111,9.810,m/s^2,7
+Very high vibration,660.147,661.062,0.915,9.963,9.810,m/s^2,2
+Very high vibration,664.129,671.127,6.998,12.191,9.810,m/s^2,8
+Very high vibration,674.113,675.128,1.015,9.942,9.810,m/s^2,2
