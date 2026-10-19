@@ -1,0 +1,124 @@
+{
+  "tests": 20,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "FindEventsTest",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "FindsOneEventAboveLimit",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_checks.cpp",
+          "line": 22
+        },
+        {
+          "name": "MergesBadReadingsCloseTogether",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_checks.cpp",
+          "line": 37
+        },
+        {
+          "name": "SplitsBadReadingsFarApart",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_checks.cpp",
+          "line": 50
+        },
+        {
+          "name": "BelowLimitTracksLowestValue",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_checks.cpp",
+          "line": 61
+        },
+        {
+          "name": "SkipsMissingValues",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_checks.cpp",
+          "line": 75
+        },
+        {
+          "name": "IgnoresReadingsOnTheGround",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_checks.cpp",
+          "line": 87
+        }
+      ]
+    },
+    {
+      "name": "InAirTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "UsesMostRecentLandedReading",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_checks.cpp",
+          "line": 105
+        },
+        {
+          "name": "NoLandingDataMeansCheckEverything",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_checks.cpp",
+          "line": 117
+        }
+      ]
+    },
+    {
+      "name": "ParserTest",
+      "tests": 12,
+      "testsuite": [
+        {
+          "name": "RejectsFileWithWrongMagicBytes",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_parser.cpp",
+          "line": 19
+        },
+        {
+          "name": "RejectsFileThatIsTooShort",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_parser.cpp",
+          "line": 30
+        },
+        {
+          "name": "RejectsMissingFile",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_parser.cpp",
+          "line": 40
+        },
+        {
+          "name": "ReadsStartTimeFromHeader",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_parser.cpp",
+          "line": 47
+        },
+        {
+          "name": "ParsesFormatFields",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_parser.cpp",
+          "line": 54
+        },
+        {
+          "name": "DecodesRequestedFields",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_parser.cpp",
+          "line": 72
+        },
+        {
+          "name": "DecodesNegativeIntegers",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_parser.cpp",
+          "line": 97
+        },
+        {
+          "name": "SkipsPaddingButCountsItsBytes",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_parser.cpp",
+          "line": 118
+        },
+        {
+          "name": "DecodesNestedFormats",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_parser.cpp",
+          "line": 142
+        },
+        {
+          "name": "HandlesLogCutOffMidMessage",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_parser.cpp",
+          "line": 168
+        },
+        {
+          "name": "WarnsAboutMissingField",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_parser.cpp",
+          "line": 191
+        },
+        {
+          "name": "OnlyDecodesRequestedTopics",
+          "file": "C:\/Users\/ncolb\/flight-log-analyzer\/tests\/test_parser.cpp",
+          "line": 204
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+Start testing: Oct 18 21:51 Pacific Daylight Time
+----------------------------------------------------------
+1/20 Testing: FindEventsTest.FindsOneEventAboveLimit
+1/20 Test: FindEventsTest.FindsOneEventAboveLimit
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=FindEventsTest.FindsOneEventAboveLimit" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"FindEventsTest.FindsOneEventAboveLimit" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FindEventsTest.FindsOneEventAboveLimit
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FindEventsTest
+[ RUN      ] FindEventsTest.FindsOneEventAboveLimit
+[       OK ] FindEventsTest.FindsOneEventAboveLimit (0 ms)
+[----------] 1 test from FindEventsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"FindEventsTest.FindsOneEventAboveLimit" end time: Oct 18 21:51 Pacific Daylight Time
+"FindEventsTest.FindsOneEventAboveLimit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/20 Testing: FindEventsTest.MergesBadReadingsCloseTogether
+2/20 Test: FindEventsTest.MergesBadReadingsCloseTogether
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=FindEventsTest.MergesBadReadingsCloseTogether" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"FindEventsTest.MergesBadReadingsCloseTogether" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FindEventsTest.MergesBadReadingsCloseTogether
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FindEventsTest
+[ RUN      ] FindEventsTest.MergesBadReadingsCloseTogether
+[       OK ] FindEventsTest.MergesBadReadingsCloseTogether (0 ms)
+[----------] 1 test from FindEventsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"FindEventsTest.MergesBadReadingsCloseTogether" end time: Oct 18 21:51 Pacific Daylight Time
+"FindEventsTest.MergesBadReadingsCloseTogether" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/20 Testing: FindEventsTest.SplitsBadReadingsFarApart
+3/20 Test: FindEventsTest.SplitsBadReadingsFarApart
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=FindEventsTest.SplitsBadReadingsFarApart" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"FindEventsTest.SplitsBadReadingsFarApart" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FindEventsTest.SplitsBadReadingsFarApart
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FindEventsTest
+[ RUN      ] FindEventsTest.SplitsBadReadingsFarApart
+[       OK ] FindEventsTest.SplitsBadReadingsFarApart (0 ms)
+[----------] 1 test from FindEventsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"FindEventsTest.SplitsBadReadingsFarApart" end time: Oct 18 21:51 Pacific Daylight Time
+"FindEventsTest.SplitsBadReadingsFarApart" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/20 Testing: FindEventsTest.BelowLimitTracksLowestValue
+4/20 Test: FindEventsTest.BelowLimitTracksLowestValue
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=FindEventsTest.BelowLimitTracksLowestValue" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"FindEventsTest.BelowLimitTracksLowestValue" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FindEventsTest.BelowLimitTracksLowestValue
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FindEventsTest
+[ RUN      ] FindEventsTest.BelowLimitTracksLowestValue
+[       OK ] FindEventsTest.BelowLimitTracksLowestValue (0 ms)
+[----------] 1 test from FindEventsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"FindEventsTest.BelowLimitTracksLowestValue" end time: Oct 18 21:51 Pacific Daylight Time
+"FindEventsTest.BelowLimitTracksLowestValue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/20 Testing: FindEventsTest.SkipsMissingValues
+5/20 Test: FindEventsTest.SkipsMissingValues
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=FindEventsTest.SkipsMissingValues" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"FindEventsTest.SkipsMissingValues" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FindEventsTest.SkipsMissingValues
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FindEventsTest
+[ RUN      ] FindEventsTest.SkipsMissingValues
+[       OK ] FindEventsTest.SkipsMissingValues (0 ms)
+[----------] 1 test from FindEventsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"FindEventsTest.SkipsMissingValues" end time: Oct 18 21:51 Pacific Daylight Time
+"FindEventsTest.SkipsMissingValues" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/20 Testing: FindEventsTest.IgnoresReadingsOnTheGround
+6/20 Test: FindEventsTest.IgnoresReadingsOnTheGround
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=FindEventsTest.IgnoresReadingsOnTheGround" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"FindEventsTest.IgnoresReadingsOnTheGround" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = FindEventsTest.IgnoresReadingsOnTheGround
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FindEventsTest
+[ RUN      ] FindEventsTest.IgnoresReadingsOnTheGround
+[       OK ] FindEventsTest.IgnoresReadingsOnTheGround (0 ms)
+[----------] 1 test from FindEventsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"FindEventsTest.IgnoresReadingsOnTheGround" end time: Oct 18 21:51 Pacific Daylight Time
+"FindEventsTest.IgnoresReadingsOnTheGround" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/20 Testing: InAirTest.UsesMostRecentLandedReading
+7/20 Test: InAirTest.UsesMostRecentLandedReading
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=InAirTest.UsesMostRecentLandedReading" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"InAirTest.UsesMostRecentLandedReading" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = InAirTest.UsesMostRecentLandedReading
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from InAirTest
+[ RUN      ] InAirTest.UsesMostRecentLandedReading
+[       OK ] InAirTest.UsesMostRecentLandedReading (0 ms)
+[----------] 1 test from InAirTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"InAirTest.UsesMostRecentLandedReading" end time: Oct 18 21:51 Pacific Daylight Time
+"InAirTest.UsesMostRecentLandedReading" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/20 Testing: InAirTest.NoLandingDataMeansCheckEverything
+8/20 Test: InAirTest.NoLandingDataMeansCheckEverything
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=InAirTest.NoLandingDataMeansCheckEverything" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"InAirTest.NoLandingDataMeansCheckEverything" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = InAirTest.NoLandingDataMeansCheckEverything
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from InAirTest
+[ RUN      ] InAirTest.NoLandingDataMeansCheckEverything
+[       OK ] InAirTest.NoLandingDataMeansCheckEverything (0 ms)
+[----------] 1 test from InAirTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"InAirTest.NoLandingDataMeansCheckEverything" end time: Oct 18 21:51 Pacific Daylight Time
+"InAirTest.NoLandingDataMeansCheckEverything" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/20 Testing: ParserTest.RejectsFileWithWrongMagicBytes
+9/20 Test: ParserTest.RejectsFileWithWrongMagicBytes
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=ParserTest.RejectsFileWithWrongMagicBytes" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"ParserTest.RejectsFileWithWrongMagicBytes" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.RejectsFileWithWrongMagicBytes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.RejectsFileWithWrongMagicBytes
+[       OK ] ParserTest.RejectsFileWithWrongMagicBytes (23 ms)
+[----------] 1 test from ParserTest (23 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (23 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.RejectsFileWithWrongMagicBytes" end time: Oct 18 21:51 Pacific Daylight Time
+"ParserTest.RejectsFileWithWrongMagicBytes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/20 Testing: ParserTest.RejectsFileThatIsTooShort
+10/20 Test: ParserTest.RejectsFileThatIsTooShort
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=ParserTest.RejectsFileThatIsTooShort" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"ParserTest.RejectsFileThatIsTooShort" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.RejectsFileThatIsTooShort
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.RejectsFileThatIsTooShort
+[       OK ] ParserTest.RejectsFileThatIsTooShort (2 ms)
+[----------] 1 test from ParserTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.RejectsFileThatIsTooShort" end time: Oct 18 21:51 Pacific Daylight Time
+"ParserTest.RejectsFileThatIsTooShort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/20 Testing: ParserTest.RejectsMissingFile
+11/20 Test: ParserTest.RejectsMissingFile
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=ParserTest.RejectsMissingFile" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"ParserTest.RejectsMissingFile" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.RejectsMissingFile
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.RejectsMissingFile
+[       OK ] ParserTest.RejectsMissingFile (1 ms)
+[----------] 1 test from ParserTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.RejectsMissingFile" end time: Oct 18 21:51 Pacific Daylight Time
+"ParserTest.RejectsMissingFile" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/20 Testing: ParserTest.ReadsStartTimeFromHeader
+12/20 Test: ParserTest.ReadsStartTimeFromHeader
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=ParserTest.ReadsStartTimeFromHeader" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"ParserTest.ReadsStartTimeFromHeader" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.ReadsStartTimeFromHeader
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.ReadsStartTimeFromHeader
+[       OK ] ParserTest.ReadsStartTimeFromHeader (14 ms)
+[----------] 1 test from ParserTest (14 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (14 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.ReadsStartTimeFromHeader" end time: Oct 18 21:51 Pacific Daylight Time
+"ParserTest.ReadsStartTimeFromHeader" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/20 Testing: ParserTest.ParsesFormatFields
+13/20 Test: ParserTest.ParsesFormatFields
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=ParserTest.ParsesFormatFields" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"ParserTest.ParsesFormatFields" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.ParsesFormatFields
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.ParsesFormatFields
+[       OK ] ParserTest.ParsesFormatFields (4 ms)
+[----------] 1 test from ParserTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.ParsesFormatFields" end time: Oct 18 21:51 Pacific Daylight Time
+"ParserTest.ParsesFormatFields" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/20 Testing: ParserTest.DecodesRequestedFields
+14/20 Test: ParserTest.DecodesRequestedFields
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=ParserTest.DecodesRequestedFields" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"ParserTest.DecodesRequestedFields" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.DecodesRequestedFields
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.DecodesRequestedFields
+[       OK ] ParserTest.DecodesRequestedFields (4 ms)
+[----------] 1 test from ParserTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.DecodesRequestedFields" end time: Oct 18 21:51 Pacific Daylight Time
+"ParserTest.DecodesRequestedFields" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/20 Testing: ParserTest.DecodesNegativeIntegers
+15/20 Test: ParserTest.DecodesNegativeIntegers
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=ParserTest.DecodesNegativeIntegers" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"ParserTest.DecodesNegativeIntegers" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.DecodesNegativeIntegers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.DecodesNegativeIntegers
+[       OK ] ParserTest.DecodesNegativeIntegers (4 ms)
+[----------] 1 test from ParserTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.DecodesNegativeIntegers" end time: Oct 18 21:51 Pacific Daylight Time
+"ParserTest.DecodesNegativeIntegers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/20 Testing: ParserTest.SkipsPaddingButCountsItsBytes
+16/20 Test: ParserTest.SkipsPaddingButCountsItsBytes
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=ParserTest.SkipsPaddingButCountsItsBytes" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"ParserTest.SkipsPaddingButCountsItsBytes" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.SkipsPaddingButCountsItsBytes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.SkipsPaddingButCountsItsBytes
+[       OK ] ParserTest.SkipsPaddingButCountsItsBytes (4 ms)
+[----------] 1 test from ParserTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.SkipsPaddingButCountsItsBytes" end time: Oct 18 21:51 Pacific Daylight Time
+"ParserTest.SkipsPaddingButCountsItsBytes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/20 Testing: ParserTest.DecodesNestedFormats
+17/20 Test: ParserTest.DecodesNestedFormats
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=ParserTest.DecodesNestedFormats" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"ParserTest.DecodesNestedFormats" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.DecodesNestedFormats
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.DecodesNestedFormats
+[       OK ] ParserTest.DecodesNestedFormats (4 ms)
+[----------] 1 test from ParserTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.DecodesNestedFormats" end time: Oct 18 21:51 Pacific Daylight Time
+"ParserTest.DecodesNestedFormats" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/20 Testing: ParserTest.HandlesLogCutOffMidMessage
+18/20 Test: ParserTest.HandlesLogCutOffMidMessage
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=ParserTest.HandlesLogCutOffMidMessage" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"ParserTest.HandlesLogCutOffMidMessage" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.HandlesLogCutOffMidMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.HandlesLogCutOffMidMessage
+[       OK ] ParserTest.HandlesLogCutOffMidMessage (4 ms)
+[----------] 1 test from ParserTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.HandlesLogCutOffMidMessage" end time: Oct 18 21:51 Pacific Daylight Time
+"ParserTest.HandlesLogCutOffMidMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/20 Testing: ParserTest.WarnsAboutMissingField
+19/20 Test: ParserTest.WarnsAboutMissingField
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=ParserTest.WarnsAboutMissingField" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"ParserTest.WarnsAboutMissingField" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.WarnsAboutMissingField
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.WarnsAboutMissingField
+[       OK ] ParserTest.WarnsAboutMissingField (5 ms)
+[----------] 1 test from ParserTest (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (5 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.WarnsAboutMissingField" end time: Oct 18 21:51 Pacific Daylight Time
+"ParserTest.WarnsAboutMissingField" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/20 Testing: ParserTest.OnlyDecodesRequestedTopics
+20/20 Test: ParserTest.OnlyDecodesRequestedTopics
+Command: "C:/Users/ncolb/flight-log-analyzer/build/run_tests.exe" "--gtest_filter=ParserTest.OnlyDecodesRequestedTopics" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/ncolb/flight-log-analyzer/build
+"ParserTest.OnlyDecodesRequestedTopics" start time: Oct 18 21:51 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/ncolb/flight-log-analyzer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.OnlyDecodesRequestedTopics
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.OnlyDecodesRequestedTopics
+[       OK ] ParserTest.OnlyDecodesRequestedTopics (4 ms)
+[----------] 1 test from ParserTest (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (5 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.OnlyDecodesRequestedTopics" end time: Oct 18 21:51 Pacific Daylight Time
+"ParserTest.OnlyDecodesRequestedTopics" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 18 21:51 Pacific Daylight Time

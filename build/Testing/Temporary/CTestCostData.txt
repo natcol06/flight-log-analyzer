@@ -1,0 +1,21 @@
+FindEventsTest.FindsOneEventAboveLimit 1 0.0295105
+FindEventsTest.MergesBadReadingsCloseTogether 1 0.026132
+FindEventsTest.SplitsBadReadingsFarApart 1 0.0299835
+FindEventsTest.BelowLimitTracksLowestValue 1 0.0242393
+FindEventsTest.SkipsMissingValues 1 0.0330597
+FindEventsTest.IgnoresReadingsOnTheGround 1 0.0301889
+InAirTest.UsesMostRecentLandedReading 1 0.0323486
+InAirTest.NoLandingDataMeansCheckEverything 1 0.021487
+ParserTest.RejectsFileWithWrongMagicBytes 1 0.0496255
+ParserTest.RejectsFileThatIsTooShort 1 0.0254866
+ParserTest.RejectsMissingFile 1 0.0246757
+ParserTest.ReadsStartTimeFromHeader 1 0.0376995
+ParserTest.ParsesFormatFields 1 0.0319764
+ParserTest.DecodesRequestedFields 1 0.025761
+ParserTest.DecodesNegativeIntegers 1 0.0248873
+ParserTest.SkipsPaddingButCountsItsBytes 1 0.0303127
+ParserTest.DecodesNestedFormats 1 0.0264907
+ParserTest.HandlesLogCutOffMidMessage 1 0.0267535
+ParserTest.WarnsAboutMissingField 1 0.0302957
+ParserTest.OnlyDecodesRequestedTopics 1 0.0298626
+---
